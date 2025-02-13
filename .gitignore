@@ -9,6 +9,7 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+!.yarn/sdks
 
 # testing
 /coverage
@@ -40,11 +41,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# yarn v4
-.yarn/*
-!.yarn/cache
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
+# vscode
+.vscode
