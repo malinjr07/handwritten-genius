@@ -6,7 +6,7 @@ For managing the project in a more concise way, we should create file in these f
 
 - `public`
 - `src`
-  - `app`
+  - `pages`
   - `components`
     - `core`
     - `common`
@@ -42,9 +42,9 @@ The `layouts` folder contains components that define the structure of pages. The
 footers, or sidebars and are used across multiple pages. Layout components are usually made up of multiple common and
 core components.
 
-### App
+### Pages
 
-The `app` folder contains the main pages of the application. Each folder in this `app` folder represents a route in the application. The structure of the `app` folder follows the [`Official Next.js Project Structure and Organization`](https://nextjs.org/docs/app/getting-started/project-structure).
+The `pages` folder contains the main pages of the application. Each folder in this `pages` folder represents a route in the application. The structure of the `pages` folder follows the [`Official Next.js Project Structure and Organization`](https://nextjs.org/docs/pages/getting-started/project-structure).
 
 #### &nbsp; Example
 
@@ -54,9 +54,9 @@ Here is an example of a simple page component:
 // filepath: /path/to/pages/Home.js
 import { NextPage } from 'next';
 import React from 'react';
-import Header from '../components/layouts/Header';
-import Footer from '../components/layouts/Footer';
-import MainContent from '../components/common/MainContent';
+import Header from '@layouts/Header';
+import Footer from '@layouts/Footer';
+import MainContent from '@common/MainContent';
 
 const Home: NextPage = () => {
   return (
