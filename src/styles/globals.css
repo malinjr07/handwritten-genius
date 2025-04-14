@@ -6,7 +6,6 @@
     @apply font-aktiv-grotesk;
   }
   * {
-    @apply transition ease-linear scroll-smooth;
+    @apply scroll-smooth transition ease-linear;
   }
 }
-
