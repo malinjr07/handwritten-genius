@@ -3,7 +3,10 @@
 
 @layer base {
   body {
-    @apply font-geist-mono;
+    @apply font-aktiv-grotesk;
+  }
+  * {
+    @apply transition ease-linear scroll-smooth;
   }
 }
 

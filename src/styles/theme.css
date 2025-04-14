@@ -1,6 +1,5 @@
 @theme inline {
-  --font-geist-sans: var(--geist-sans);
-  --font-geist-mono: var(--geist-mono);
+  --font-aktiv-grotesk: var(--aktiv-grotesk);
 }
 
 @theme {

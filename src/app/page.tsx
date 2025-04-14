@@ -1,96 +1,42 @@
 import Image from 'next/image';
-import styles from './page.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src='/next.svg'
-          alt='Next.js logo'
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href='https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <Image
-              className={styles.logo}
-              src='/vercel.svg'
-              alt='Vercel logomark'
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-            target='_blank'
-            rel='noopener noreferrer'
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <>
+      <header className='w-full flex flex-row justify-between items-center px-12 pt-[70px] '>
+        <div className='logo w-[178px] h-[50px] relative'>
+          <Image
+            src={'/logo.webp'}
+            alt='Handwrytten Logo'
+            className='object-contain w-full h-full '
+            fill={true}
+          />
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href='https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <Image
-            aria-hidden
-            src='/file.svg'
-            alt='File icon'
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href='https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <Image
-            aria-hidden
-            src='/window.svg'
-            alt='Window icon'
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href='https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <Image
-            aria-hidden
-            src='/globe.svg'
-            alt='Globe icon'
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <nav>
+          <ul className='flex flex-row gap-8'>
+            <li className='text-[18px] text-[#000000] font-normal'>Pricing</li>
+            <li className='text-[18px] text-[#000000] font-normal'>
+              Solutions
+            </li>
+            <li className='text-[18px] text-[#000000] font-normal'>
+              Integrations
+            </li>
+            <li className='text-[18px] text-[#000000] font-normal'>
+              Resources
+            </li>
+            <li className='text-[18px] text-[#000000] font-normal'>Support</li>
+          </ul>
+        </nav>
+        <div className='flex flex-row gap-4'>
+          <button className='text-[18px] uppercase text-[#000000] font-normal'>
+            Sign In
+          </button>
+          <button className='bg-[#FFB400] uppercase text-[18px] text-[#000000] font-normal px-6 py-2 rounded-[5px]'>
+            sign up
+          </button>
+        </div>
+      </header>
+    </>
   );
 }
 
