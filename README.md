@@ -110,16 +110,16 @@ Here is an example of how to set up a Zustand store:
 
 ```javascript
 // filepath: /path/to/store/useStore.js
-import create from 'zustand'
+import create from 'zustand';
 
 const useStore = create((set) => ({
   // Define your state and actions here
   count: 0,
   increment: () => set((state) => ({ count: state.count + 1 })),
   decrement: () => set((state) => ({ count: state.count - 1 })),
-}))
+}));
 
-export default useStore
+export default useStore;
 ```
 
 #### &nbsp; Types
@@ -135,9 +135,9 @@ Here is an example of a simple type definition:
 ```typescript
 // filepath: /path/to/types/index.d.ts
 export interface User {
-  id: number
-  name: string
-  email: string
+  id: number;
+  name: string;
+  email: string;
 }
 ```
 

@@ -9,3 +9,9 @@
     @apply scroll-smooth transition ease-linear;
   }
 }
+
+@layer components{
+  .hasSub{
+    @apply relative;
+  }
+}

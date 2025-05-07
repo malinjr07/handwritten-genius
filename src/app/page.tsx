@@ -1,4 +1,4 @@
-import Header from '@/components/common/Header'
+import Header from '@/components/common/Header';
 
 export default function Home() {
   return (
@@ -6,5 +6,5 @@ export default function Home() {
       <Header />
       <section className="bg-[#f5f6f0] pt-[212px] pb-[432px]"></section>
     </>
-  )
+  );
 }
