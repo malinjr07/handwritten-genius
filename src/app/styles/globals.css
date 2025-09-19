@@ -2,9 +2,6 @@
 @import './theme.css';
 
 @layer base {
-  body {
-    /* @apply font-aktiv-grotesk; */
-  }
   * {
     @apply scroll-smooth transition ease-linear;
   }
@@ -15,4 +12,3 @@
     @apply relative;
   }
 }
-

@@ -20,19 +20,18 @@
     ],
     "baseUrl": "src/",
     "paths": {
-      "@components/*": ["components/*"],
+      // "@components/*": ["components/*"],
       "@common/*": ["components/common/*"],
       "@core/*": ["components/core/*"],
       "@layouts/*": ["components/layouts/*"],
-      "@utils/*": ["utils/*"],
+      // "@utils/*": ["utils/*"],
       "@lib/*": ["utils/lib/*"],
       "@hooks/*": ["utils/hooks/*"],
       "@services/*": ["utils/services/*"],
       "@store/*": ["utils/store/*"],
-      "@types/*": ["utils/types/*"]
+      "@customTypes/*": ["utils/customTypes/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
-
