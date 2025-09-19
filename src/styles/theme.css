@@ -1,8 +1,5 @@
-/* Using inline for defining variables that reference to other variables */
-
 @theme inline {
-  --font-geist-sans: var(--geist-sans);
-  --font-geist-mono: var(--geist-mono);
+  --font-aktiv-grotesk: var(--aktiv-grotesk);
 }
 
 @theme {
@@ -12,12 +9,5 @@
   --breakpoint-4xl: 1536px;
   --breakpoint-5xl: 1920px;
   --breakpoint-6xl: 2560px;
-  --breakpoint-7xl: 3840px;
-  --font-sans: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --font-serif: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    'Liberation Mono', 'Courier New', monospace;
- 
+  --breakpoint-7xl: 3840px; 
 }
-

@@ -3,7 +3,16 @@
 
 @layer base {
   body {
-    @apply font-geist-mono;
+    /* @apply font-aktiv-grotesk; */
+  }
+  * {
+    @apply scroll-smooth transition ease-linear;
+  }
+}
+
+@layer components {
+  .hasSub {
+    @apply relative;
   }
 }
 
